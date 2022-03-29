@@ -7,7 +7,6 @@
   },
   "license": "None",
   "devDependencies": {
-    "@vuepress/plugin-nprogress": "^1.9.7",
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
@@ -22,6 +21,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "element-plus": "^2.1.6"
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.15.6"
   }
 }
