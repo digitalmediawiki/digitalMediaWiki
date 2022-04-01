@@ -116,12 +116,12 @@
      ],
      sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
      logo: '/img/logo.png', // 导航栏logo
-     //repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
-     //searchMaxSuggestions: 10, // 搜索结果显示最大数
-     //lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
-    // docsDir: 'docs', // 编辑的文件夹
-     //editLinks: true, // 启用编辑
-     //editLinkText: '编辑',
+     repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+     searchMaxSuggestions: 10, // 搜索结果显示最大数
+     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
+     docsDir: 'docs', // 编辑的文件夹
+     editLinks: true, // 启用编辑
+     editLinkText: '编辑',
  
      //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
  
@@ -155,45 +155,45 @@
      sidebar: 'structuring',
  
      // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
-    //  author: {
-    //    name: 'xugaoyi', // 必需
-    //    link: 'https://github.com/xugaoyi', // 可选的
-    //  },
+     author: {
+       name: 'xugaoyi', // 必需
+       link: 'https://github.com/xugaoyi', // 可选的
+     },
  
      // 博主信息 (显示在首页侧边栏)
-    //  blogger: {
-    //    avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-    //    name: 'Evan Xu',
-    //    slogan: '前端界的小学生',
-    //  },
+     blogger: {
+       avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+       name: 'Evan Xu',
+       slogan: '前端界的小学生',
+     },
  
      // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
-    //  social: {
-    //    // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
-    //    icons: [
-    //      {
-    //        iconClass: 'icon-youjian',
-    //        title: '发邮件',
-    //        link: 'mailto:894072666@qq.com',
-    //      },
-    //      {
-    //        iconClass: 'icon-github',
-    //        title: 'GitHub',
-    //        link: 'https://github.com/xugaoyi',
-    //      },
-    //      {
-    //        iconClass: 'icon-erji',
-    //        title: '听音乐',
-    //        link: 'https://music.163.com/#/playlist?id=755597173',
-    //      },
-    //    ],
-    //  },
+     social: {
+       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
+       icons: [
+         {
+           iconClass: 'icon-youjian',
+           title: '发邮件',
+           link: 'mailto:894072666@qq.com',
+         },
+         {
+           iconClass: 'icon-github',
+           title: 'GitHub',
+           link: 'https://github.com/xugaoyi',
+         },
+         {
+           iconClass: 'icon-erji',
+           title: '听音乐',
+           link: 'https://music.163.com/#/playlist?id=755597173',
+         },
+       ],
+     },
  
      // 页脚信息
      footer: {
-       createYear: 2022, // 博客创建年份
+       createYear: 2019, // 博客创建年份
        copyrightInfo:
-         ' xxxx | xxxxx xxx@xxxx ', // 博客版权信息，支持a标签或换行标签</br>
+         'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
      },
  
      // 自定义hmtl(广告)模块
@@ -210,20 +210,30 @@
          content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
        },
      ],
+     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+     // [
+     //   'script',
+     //   {
+     //     'data-ad-client': 'ca-pub-7828333725993554',
+     //     async: 'async',
+     //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+     //   },
+     // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
    ],
  
  
    // 插件配置
    plugins: <UserPlugins>[
  
-    //  'vuepress-plugin-baidu-autopush', // 百度自动推送
+     'vuepress-plugin-baidu-autopush', // 百度自动推送
  
-    //  [
-    //    'vuepress-plugin-baidu-tongji', // 百度统计
-    //    {
-    //      hm: baiduCode,
-    //    },
-    //  ],
+     [
+       'vuepress-plugin-baidu-tongji', // 百度统计
+       {
+         hm: baiduCode,
+       },
+     ],
  
      // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
      'fulltext-search',
