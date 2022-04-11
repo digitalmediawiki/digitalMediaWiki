@@ -10,15 +10,12 @@ bannerBg: auto
 
 features: # 可选的
   - title: 考研方向
-    details: xxxxx
     link: / 
     imgUrl: /postgraduate.png
   - title: 就业方向
-    details: xxxxxxx
     link: /
     imgUrl: /job.png
   - title: 学科能力
-    details: xxxxxxx
     link: /
     imgUrl: /ability.png
 
