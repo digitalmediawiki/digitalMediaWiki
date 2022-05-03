@@ -3,7 +3,26 @@ module.exports = {
     title: 'DigitalMediaWiki',
     description: '',
     head: [
-        []
+        // scrollbar improve
+        ['style',{'type':'text/css'},`
+            html ::-webkit-scrollbar {
+                width: 5px !important;
+                height: 5px !important; }
+            html ::-webkit-scrollbar-corner,
+            html ::-webkit-scrollbar-track {
+                background: transparent !important; }
+            html ::-webkit-resizer,
+            html ::-webkit-scrollbar-thumb {
+                background: #aaa;
+                border-radius: 3px; }
+            html ::-webkit-scrollbar-thumb:hover {
+                background: #888; }
+            html,
+            html * {
+                scrollbar-color: #aaa transparent;
+                scrollbar-width: thin !important; 
+            }
+        `]
     ],
 
     themeConfig: {
