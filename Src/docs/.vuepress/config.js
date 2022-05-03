@@ -1,72 +1,106 @@
 module.exports = {
+    base: process.env.VUEPRESS_BASE || "/",
+    title: 'DigitalMediaWiki',
+    description: '',
+    head: [
+        []
+    ],
+
     themeConfig: {
         // 导航栏 Logo
-        logo: '/assets/img/logo.png',
+        logo: '/img/logo.png',
+
+        // 仓库配置
+        repo: 'digitalmediawiki/DigitalMediaWiki',
+        docsDir: 'Src/docs',
+        editLinks: true,
+        docsBranch: 'main',
+        editLinkText: '在Github上编辑！',
+
         nav: [
-            { text: '导航', link: '/building/' },
+            { text: '指南', link: '/guide/intro' },
+            { text: '介绍', link: '/intro/about_dm' },
             {
                 text: '考研方向',
+                // '/postgraduate/'
                 ariaLabel: '考研方向',
                 items: [
-                    { text: '计算机类考研', link: '/building/' },
-                    { text: '通信方向考研', link: '/building/' },
-                    { text: '艺术类考研', link: '/building/' },
+                    { text: '计算机类考研', link: '/postgraduate/cs' },
+                    { text: '通信方向考研', link: '/postgraduate/te' },
+                    { text: '艺术类考研', link: '/postgraduate/fa' },
                 ]
             },
             {
                 text: '就业方向',
+                // '/job/'
                 ariaLabel: '就业方向',
                 items: [
                     { 
                         text: '游戏相关',
-                        items: [
-                            { text: '美术类', link: '/building/' },
-                            { text: '程序类', link: '/building/' },
-                            { text: '策划类', link: '/building/' },
-                        ]
+                        link: '/job/game'
                     },
                     { 
                         text: '影视方向',
-                        items: [
-                            { text: '美术类', link: '/building/' },
-                            { text: '程序类', link: '/building/' },
-                            { text: '策划类', link: '/building/' },
-                        ]
+                        link: '/job/film'
                     },
                     { 
                         text: '互动媒体',
-                        items: [
-                            { text: '虚拟现实', link: '/building/' },
-                            { text: '增强现实', link: '/building/' },
-                            { text: '人机交互', link: '/building/' },
-                        ]
+                        link: '/job/meta'
                     }
                 ]
             },
             {
                 text: '学科能力',
+                // '/ability/'
                 ariaLabel: '学科能力',
                 items: [
                     { 
                         text: '程序思维',
-                        items: [
-                            { text: '数据结构与算法', link: '/building/' },
-                            { text: '图形学', link: '/building/' },
-                            { text: '信号处理', link: '/building/' },
-                        ]
-                    },
+                        link: '/ability/program'
+                    },    
                     { 
                         text: '设计能力',
-                        items: [
-                            { text: '图形创意能力', link: '/building/' },
-                            { text: '数字转化能力', link: '/building/' },
-                            { text: '艺术鉴赏能力', link: '/building/' },
-                        ]
+                        link: '/ability/design'
                     }
                 ]
             },
-            { text: 'Github', link: 'https://github.com/digitalmediawiki/digitalMediaWiki' , target:'_blank'},
+            //{ text: 'Github', link: 'https://github.com/digitalmediawiki/digitalMediaWiki' , target:'_blank'},
         ],
+        sidebar: {
+            '/guide/':[
+                {
+                    title:"简介",
+                    path:"intro"
+                },
+                {
+                    title:"使用指南",
+                    path:"how_to_use"
+                },
+                {
+                    title:"参与贡献",
+                    path:"contribution"
+                },
+            ],
+            '/intro/':[
+                {
+                    title:"关于数字媒体",
+                    path:"about_dm"
+                },
+                {
+                    title:"课程开设",
+                    path:"school_class"
+                },
+            ],
+            '/postgraduate/':[
+
+            ],
+            '/job/':[
+
+            ],
+            '/ability/':[
+
+            ],
+        },
         lastUpdated: '最后更新'
     },
     plugins: [
