@@ -28,8 +28,8 @@
 
 除此之外 **数字媒体百科** 还有几个姊妹项目
 
-- **DigitalMediaTools** 收集介绍数媒常见工具 [链接]()
-- **DigitalMediaBooks** 收集介绍数媒常见书籍 [链接]()
+- **DigitalMediaTools** 收集介绍数媒常见工具 ~~[链接]()~~ *建设中* 
+- **DigitalMediaBooks** 收集介绍数媒常见书籍 ~~[链接]()~~ *建设中* 
 
 
 
@@ -39,9 +39,9 @@
 
 在决定贡献之前 请务必阅读 [参与贡献]() 其中包括了更完善的贡献方式
 
-对于文章中的问题 可以提一个 [Issue]()
+对于文章中的问题 可以提一个 [Issue](https://github.com/digitalmediawiki/digitalMediaWiki/issues/new)
 
-对于想要贡献内容 可以提交 [Pull Request]()
+对于想要贡献内容 可以提交 [Pull Request](https://github.com/digitalmediawiki/digitalMediaWiki/pulls)
 
 
 
